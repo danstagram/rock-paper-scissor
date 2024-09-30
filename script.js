@@ -12,3 +12,14 @@ function getComputerChoice(){
     }
     return SelectionWord;
 }
+
+// function to make the human input a choice
+function getHumanChoice(){
+    let SelectionHuman = prompt("Choose Rock, Paper or Scissors");
+    return SelectionHuman;
+}
+
+//variables to keep score
+let humanScore = 0;
+let computerScore = 0
+

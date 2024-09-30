@@ -1,3 +1,4 @@
+// function to make the computer choose rock, paper or scissors
 function getComputerChoice(){
     let SelectionValue = (Math.random()*100)
     let SelectionWord = ""
@@ -9,9 +10,5 @@ function getComputerChoice(){
     } else {
         SelectionWord = "Scissors"
     }
-
-    console.log(SelectionValue);    //debugging
-    console.log(SelectionWord);     //debugging
-
     return SelectionWord;
 }

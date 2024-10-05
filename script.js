@@ -86,6 +86,7 @@ function playRound(humanChoice, computerChoice){
             break;
     }
 
+console.clear();
 
 if (winner === "human"){
     humanScore++;
@@ -99,8 +100,37 @@ if (winner === "human"){
     console.warn("It's a tie!");
 
 }
-    console.log("Human Selected " + humanSelection);
-    console.log("Computer Selected " + computerSelection);
+    console.log("Human selected " + humanSelection);
+    console.log("Computer selected " + computerSelection);
     console.log("Score Human: " + humanScore);
     console.log("Score Computer: " + computerScore);
+}
+
+
+function playGame(){
+
+    //reset count variables
+    humanScore = 0;
+    computerScore = 0;
+    
+    // variable to set number of games in a round
+    let numberOfGames = 5;
+
+    for (let i = 0; i<numberOfGames; i++){
+        playRound()
+    }
+
+    console.clear();
+
+    if (humanScore > computerScore){
+        console.warn("Human wins!");
+    } else if (computerScore > humanScore){
+        console.warn("Computer wins!");
+    } else {
+        console.warn("It's a tie!");
+    }
+
+    console.log("Final Score:");
+    console.log("Score Human: "+humanScore);
+    console.log("Score Computer: "+computerScore);
 }

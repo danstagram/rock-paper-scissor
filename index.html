@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS_game</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <header>
+        <h1>Rock Paper Scissors Game</h1>
+    </header>
+
+    <main>
+        <div class="scoreboard">
+            <h2 class="scoreboard scoreboard-title title-text">
+                Current Score:
+            </h2>
+            <div class = "scoreboard score-container">
+                <div class="scoreboard score-human score-human-box">
+                    <div class = "scoreboard score-title score-human">
+                        Score Human:
+                    </div>
+                    <div class="scoreboard score-human score-counter">
+                        na
+                    </div>
+                </div>
+                <div class="scoreboard score-computer score-computer-box">
+                    <div class="scoreboard score-title score-computer">
+                        Score Computer:
+                    </div>
+                    <div class="scoreboard score-computer score-counter">
+                        na
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game">
+            <h2 class="game game-title title-text">
+                Select your move
+            </h2>
+            <div class="game game-move-box">
+                <div class="game game-selection selection-rock">ROCK</div>
+                <div class="game game-selection selection-paper">PAPER</div>
+                <div class="game game-selection selection-scissors">SCISSORS</div>
+            </div>
+        </div>
+
+        <div class="results">
+            Play for 5 rounds.
+            <div class="results winner">
+                The winner is:
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-txt">Made by Danstagram on GitHub</div>
+    </footer>
 </body>
 </html>

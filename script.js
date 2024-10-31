@@ -113,12 +113,7 @@ function playGame(){
     humanScore = 0;
     computerScore = 0;
     
-    // variable to set number of games in a round
-    let numberOfGames = 5;
-
-    for (let i = 0; i<numberOfGames; i++){
-        playRound()
-    }
+    playRound();
 
     console.clear();
 

@@ -44,6 +44,9 @@ main{
 .score-human-box, .score-computer-box{
     background-color: #0B192C;
     border-radius: 1em;
+    border-color: #F1F5F2;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .score-counter{
@@ -81,4 +84,9 @@ footer{
     background-color: #0B192C;
     padding: 0.5em;
     max-height: 30px;
+}
+
+button{
+    color: #F1F5F2;
+    font-family: sans-serif;
 }

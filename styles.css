@@ -43,6 +43,7 @@ main{
 
 .score-human-box, .score-computer-box{
     background-color: #0B192C;
+    border-radius: 1em;
 }
 
 .score-counter{
@@ -68,6 +69,7 @@ main{
 
 .game-selection{
     background-color: #0B192C;
+    border-radius: 2em;
 }
 
 .title-text{

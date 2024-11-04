@@ -129,3 +129,16 @@ function playGame(){
     console.log("Score Human: "+humanScore);
     console.log("Score Computer: "+computerScore);
 }
+
+//change button color when mouseover:
+const btn = document.querySelectorAll(".game-selection");
+for(let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener("mouseover", function() {
+        btn[i].style.background = "#FF6500";
+    })
+    btn[i].addEventListener("mouseout", function() {
+        btn[i].style.background = "#0B192C"
+    })
+}
+
+

@@ -137,7 +137,7 @@ for(let i = 0; i < btn.length; i++) {
         btn[i].style.background = "#FF6500";
     })
     btn[i].addEventListener("mouseout", function() {
-        btn[i].style.background = "#0B192C"
+        btn[i].style.background = "#0B192C";
     })
 }
 

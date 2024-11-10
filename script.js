@@ -13,25 +13,6 @@ function getComputerChoice(){
     return SelectionWord;
 }
 
-// function to make the human input a choice
-function getHumanChoice(){
-
-let SelectionHuman = ""
-
-    // check if input is valid:
-    while (true){
-        SelectionHuman = prompt("Choose Rock, Paper or Scissors");
-        SelectionHuman = SelectionHuman.toLowerCase();
-        if (SelectionHuman === "rock" | SelectionHuman === "paper" | SelectionHuman === "scissors"){
-            break;
-        }
-    }
-    
-    
-    return SelectionHuman;
-    //return SelectionHuman.toLowerCase();
-}
-
 //variables to keep score
 let humanScore = 0;
 let computerScore = 0;
@@ -39,7 +20,7 @@ let computerScore = 0;
 // function to play the game
 function playRound(humanChoice, computerChoice){
     
-    const humanSelection = getHumanChoice();
+    const humanSelection = humanChoice;
     const computerSelection = getComputerChoice();
     
     winner = ""
@@ -142,3 +123,18 @@ for(let i = 0; i < btn.length; i++) {
 }
 
 
+// event listener for button click to play game
+const btn_rock = document.querySelector(".selection-rock");
+btn_rock.addEventListener("click", function() {
+    playRound("rock");
+})
+
+const btn_paper = document.querySelector(".selection-paper");
+btn_paper.addEventListener("click", function() {
+    playRound("paper");
+})
+
+const btn_scissors = document.querySelector(".selection-scissors");
+btn_scissors.addEventListener("click", function() {
+    playRound("scissors");
+})
